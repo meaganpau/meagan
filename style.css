@@ -1,0 +1,33 @@
+body {
+	background-color: #fff;
+}
+
+h1 {
+	font-family: "Times New Roman";
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	border-bottom: #000;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.meagan {
+	float: left;
+}
+
+.menu {
+	float: right;
+	width: 50%;
+	margin-top: 1.5%;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+	padding: 0px 100px;
+}
