@@ -3,10 +3,22 @@
 
 body {
 	background-color: #fff;
+	overflow: hidden;
 }
 
 h1 {
-	font-family: "Times New Roman";
+	font-family: "Garamond";
+	padding-left: 5%;
+	width: 100%;
+}
+
+.banner {
+	background-image: url('images/banner.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 380px;
+
 }
 
 .header {
@@ -15,28 +27,57 @@ h1 {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	position: absolute;
-	top: 50%;
+	top: 60%;
+	background-color: #fff;
 }
+
+.header a {
+	font-family: "Garamond";
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+}
+
 .meagan {
 	float: left;
-}
-
-.menu {
-	float: right;
-	width: 50%;
-	margin-top: 1.5%;
-}
-
-.menu ul {
-	list-style: none;
-}
-
-.menu li {
-	display: inline-block;
-	padding: 0px 100px;
 }
 
 .fixed {
     position: fixed;
     top: 0px;
  }
+
+ .content {
+ 	position: relative;
+ 	top:50px;
+ 	z-index: -1;
+ 	margin: 5%;
+ }
+
+.f-nav /* this make our menu fixed top */ { 
+	z-index: 9999; 
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	width: 100%;
+} 
+	
+.navigation { 
+	height: 42px;
+}
+
+.navigation ul { 
+	list-style: none; 
+	margin-left: 60%
+}
+
+.navigation ul li { 
+	display: inline-block;
+	padding-right: 40%; 
+	margin-top: 10px;
+}
+
+.navigation ul li a:hover { 
+	color: #555;
+}

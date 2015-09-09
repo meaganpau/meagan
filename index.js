@@ -1,9 +1,13 @@
-var num = 100; //number of pixels before modifying styles
+jQuery("document").ready(function($){
+	var pos = $('.header').offset().top;
+	var nav = $('.header');
+	
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > pos) {
+			nav.addClass("f-nav");
+		} else {
+			nav.removeClass("f-nav");
+		}
+	});
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
-        $('.header').addClass('fixed');
-    } else {
-        $('.header').removeClass('fixed');
-    }
 });
